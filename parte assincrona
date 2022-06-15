@@ -1,0 +1,37 @@
+function f1(callback) {
+    setTimeout(function () {   
+        console.log(`Tarefa 1 apos 10 segundos`);
+        if (callback) callback();
+    }, 10*1000)
+
+};
+
+function f2(callback) {
+    setTimeout(function () {
+        console.log(`Tarefa 2 apos  5 segundos`);
+        if (callback) callback();
+    }, 5 * 1000)
+
+};
+
+function f3(callback) {
+    setTimeout(function () {
+        console.log(`Tarefa 3 apos 4 segundos`);
+        if (callback) callback();
+    }, 4 * 1000);
+
+};
+
+function f4(callback) {
+    setTimeout(function () {
+        console.log(`Tarefa 4 apos 4 segundos`);
+        if (callback) callback();
+    }, 4 * 1000);
+
+};
+
+
+f1();
+f2();
+f3();
+f4();
